@@ -1,0 +1,11 @@
+from fastapi import APIRouter, Depends
+
+from app.core.security import get_current_user
+from app.schemas.api import UserResponse
+
+router = APIRouter(tags=["Authentication"])
+
+
+@router.get("/me", response_model=UserResponse)
+async def get_me(current_user: dict = Depends(get_current_user)):
+    return {"id": current_user["id"], "email": current_user.get("email")}

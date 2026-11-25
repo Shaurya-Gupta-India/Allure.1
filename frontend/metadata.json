@@ -1,0 +1,8 @@
+{
+  "name": "ALLURE – Your Personal AI Grooming Advisor",
+  "description": "Look Better. Feel Confident. AI-powered grooming analysis, personalized hair & skin routines, and expert styling advice tailored to your facial features.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
